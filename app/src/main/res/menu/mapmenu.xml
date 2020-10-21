@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/onekm"
+        android:title="Within 1km"/>
+    <item
+        android:id="@+id/tenkm"
+        android:title="Within 10km"/>
+    <item
+        android:id="@+id/hundredkm"
+        android:title="Within 100km"/>
+    <item
+    android:id="@+id/thousandkm"
+    android:title="Within 1000km"/>
+    <item
+        android:id="@+id/tenthousandkm"
+        android:title="Within 10000km"/>
+
+</menu>

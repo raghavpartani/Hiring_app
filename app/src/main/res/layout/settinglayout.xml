@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/loginCard"
+    app:cardCornerRadius="@dimen/loginCardRadius"
+    android:elevation="5dp"
+    android:layout_gravity="center"
+    android:layout_marginTop="@dimen/loginViewsMargin"
+    android:layout_marginBottom="@dimen/loginViewsMargin"
+    android:background="@color/whiteCardColor">
+
+
+
+    <LinearLayout
+        style="@style/linearParent"
+        android:layout_gravity="center"
+        android:padding="@dimen/loginViewsMargin">
+
+        <TextView
+            style="@style/headerTextPrimary"
+            android:text="Setting"
+            android:layout_marginTop="@dimen/loginViewsMargin"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/parent">
+            <EditText
+                android:hint="Name"
+                android:id="@+id/profileName"
+                style="@style/modifiedEditText"
+                android:inputType="textPersonName"
+                android:maxLines="1"
+                android:layout_marginTop="@dimen/loginViewsMargin"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/parent">
+            <EditText
+                android:layout_marginTop="@dimen/loginViewsMargin"
+                android:hint="Phone"
+                android:id="@+id/profilePhone"
+                style="@style/modifiedEditText"
+                android:maxLines="1"
+                android:inputType="number"/>
+        </com.google.android.material.textfield.TextInputLayout>
+    <LinearLayout
+        style="@style/linearParent"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+        <Button
+            android:text="Confirm"
+            android:id="@+id/profileConfirmBtn"
+            style="@style/loginButton"
+            android:layout_margin="2dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/loginViewsMargin"/>
+        <Button
+            android:text="Back"
+            android:layout_margin="2dp"
+            android:id="@+id/profileBackBtn"
+            style="@style/loginButton"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/loginViewsMargin"/>
+    </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
